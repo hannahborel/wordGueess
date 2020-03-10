@@ -18,14 +18,14 @@ var wrongGuesses = [];
 
 var winCounter = 0;
 var lossCounter = 0;
-var numGuesses = 9;
+var numGuesses = 6;
 
 // -----------------Game Code------------------//
 
 function startGame(){
 
     // resets guesses back to 0
-    numGuesses = 9;
+    numGuesses = 6;
 
     // solution chosen radndomly from word list
     chosenWord = wordList[Math.floor(Math.random() * wordList.length)]
@@ -136,11 +136,10 @@ function startGame(){
         }
     }
 
-
-
-startGame();
+    startGame();
 
 document.onkeyup = function(event){
+    
     var letterGuessed = String.fromCharCode(event.which).toLowerCase();
     checkLetters(letterGuessed);
     roundComplete()
