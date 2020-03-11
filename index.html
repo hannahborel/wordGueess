@@ -5,42 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word Guess Game</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <!-- Bootstrap container will hold everything -->
-    <div class= "container">
-        <!-- Jumbtotron holds title section -->
-        <div class = "jumbotron text-center">
-            <div class = "container">
-                <h1> ARE YOU A CODER?</h1>
-                <h4> WORD GUESS GAME</h4>
-            </div>
-        </div>
-
-    
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="card" style="margin-bottom: 2rem;">
-                    <div class="card-body text-center">
-                        <h6>So you think you can talk like a coder? Let's find out.<br> Click any letter to begin...</h6>
+    <div class= "container centered">
+        <div class="jumbotron bg-dark text-white">
+            <h1 class="display-4">CAN YOU SPEAK CODER?</h1>
+            <p class="lead">WORD GUESS GAME</p>
+            <hr class="my-4">
+         <div class="row">
+             <div class="col-lg-6">
+                <div class="card bg-dark text-wite border-light">
+                    <div class="card-body">
+                        <p class="lead-directions">So you think you can talk the talk? Let's find out.<br> Click any letter to start your guesses.</p>
                     </div>
-                </div>
-            </div>
+               </div>
+             </div>
         </div>
+    </div>
 
                
                 <!-- First Card: Holds Word to Guess (blanks and guessed word) -->
 
                 <div class="row">
                     <div class="col" style="margin-bottom: 3rem;">
-                        <div class="card text-center h-100">
-                            <div class="card-header">
+                        <div class="card border-dark text-center h-100">
+                            <div class="card-header bg-white text-dark">
                             <h4 class="card-title">YOUR WORD</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body bg-dark text-white">
                                 <h3 id="word-blanks"></h3>
                             </div>
                         </div>
@@ -48,11 +45,11 @@
 
                 <!-- Second Card: Holds the list of Wrong User Guesses. -->
                 <div class="col" style="margin-bottom: 3rem;">
-                    <div class="card text-center h-100">
-                        <div class="card-header">
+                    <div class="card border-dark text-center h-100">
+                        <div class="card-header border-dark bg-white text-dark">
                             <h4 class="card-title">WRONG LETTERS</h4>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body bg-dark text-white">
                             <h3 id="wrong-guesses"></h3>
                         </div>
                     </div>
@@ -63,7 +60,7 @@
         <div class="row">
                 <!-- Third card: HOlds the Number of Wrong Guesses -->
             <div class= "col">
-                <div class="card text-center">
+                <div class="card text-center border-dark">
                     <div class="card-body">
                             <div class="card-title">
                                 <h3>TURNS LEFT </h3>
@@ -77,27 +74,27 @@
 
                 <!-- Fourth Card: Holds Num of Wins -->
             <div class = "col">
-                <div class="card text-center">
+                <div class="card text-center border-dark">
                     <div class="card-body">
                         <div class="card-title">
                             <h3>WINS</h3>
                         </div>      
                     
                         <!-- winCounter: dumping the number of wins -->
-                         <span id="win-counter">0</span>
+                        <p class="card-text text-success"> <span id="win-counter">0</span></p>
                     </div>
                 </div>
             </div>
                 <!-- Fifth card: Holds num of losses -->
             <div class="col">
-                <div class="card text-center">
+                <div class="card text-center border-dark">
                     <div class="card-body">
                         <div class="card-title">
                             <h3>LOSSES</h3>
                         </div>
 
                         <!-- lossGounter: dumping number of losses -->
-                         <span id="loss-counter">0</span>
+                        <p class="card-text text-danger"><span id="loss-counter">0</span></p>
                     </div>
                   </div>
                 </div>

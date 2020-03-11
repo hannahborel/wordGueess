@@ -1,3 +1,23 @@
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #word-blanks, #wrong-guesses{
+      font-size: 40px;
+      letter-spacing: .2rem;
+  }
+
+.lead{
+    letter-spacing: .25rem;
+}
+.lead-directions{
+    letter-spacing: .1rem;
+}
 #guesses-left, #win-counter, #loss-counter{
     font-size:60px;
 }
+
+

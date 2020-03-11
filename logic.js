@@ -44,7 +44,7 @@ function startGame(){
 
     // Fill up the blanks and Sucesses list with the appropriate number of blanks.
     for(var i = 0; i < lettersInChosenWord.length; i++){
-        blanksAndSucesss.push("_");
+        blanksAndSucesss.push(" _ ");
     };
 
     // Print the inital blanks in the console
